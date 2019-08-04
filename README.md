@@ -5,6 +5,8 @@ Inputs:
 * pandas_data_frame: A pandas dataframe with a json column within it
 * json_column_index: index of that column
 * json_id_column: the unique identifier of the data you're trying to extract, e.g. "id" or "name"
+* encodinglimit: the maximum amount of codes you want to generate. to save processing time or ignore special cases. Default 1000.
+* remove_non_encoded: you may not want to use data that was not encoded. Defaults to 1, which discards anything that did not have the top encodinglimit codes.
 
 Example input:
 
